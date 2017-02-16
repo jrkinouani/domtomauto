@@ -10,13 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170216050023) do
+ActiveRecord::Schema.define(version: 20170216064617) do
 
   create_table "cars", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "price_seven_days"
+    t.integer  "price_ten_days"
+    t.integer  "price_fifteen_days"
+    t.integer  "price_fifteenmore_days"
+    t.integer  "price_twenty_days"
+    t.integer  "price_month_days"
   end
 
 end

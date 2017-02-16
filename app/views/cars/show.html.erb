@@ -1,0 +1,12 @@
+<div class="jpb">
+    <h1 class="title"><%= @car.title %>
+    </h1><%= @car.description %> <br>
+  </h1><%= @car.price_seven_days %> <br>
+</div>
+
+<div id="links">
+    <%= link_to "Retour", root_path, :class => "btn btn-primary" %>
+    <!--<%= link_to "Editez", edit_car_path, :class => "btn btn-primary" %>
+    <%= link_to "Delete", car_path(@car), method: :delete, data: { confirm: "are you sure ? "}, :class => "btn btn-primary"%>-->
+
+</div>
