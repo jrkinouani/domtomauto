@@ -1,1 +1,17 @@
-<h1>page index</h1>
+<section id="cars">
+      <% @cars.each do |car| %>
+      <div class="job">
+      <div class="text-center">
+        <h2><%= link_to car.title.capitalize,car %><br></h2>
+      </div>
+
+      <p><%= car.description %></p>
+      <h3><%= car.price_seven_days %> €</h3>
+      <h3><%= car.price_ten_days %> €</h3>
+      <h3><%= car.price_fifteen_days %> €</h3>
+      <h3><%= car.price_fifteenmore_days %> €</h3>
+      <h3><%= car.price_twenty_days %> €</h3>
+      <h3><%= car.price_month_days %> €</h3>
+    </div>
+      <% end %>
+</section>

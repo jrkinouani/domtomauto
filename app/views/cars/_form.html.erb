@@ -1,9 +1,15 @@
 <div class="row">
   <div class="col-md-offset-4 col-md-4 ">
     <%= simple_form_for(@car, html: { class: 'form-horizontal' }) do |f|%>
-    <%= f.text_field :title , :placeholder => "Votre titre", class:"form-control" %>
-   <%= f.text_area :description , :placeholder => "Votre annonce", class:"form-control" %>
-   <%= f.number_field :price_seven_days, :placeholder => "location sur 7jours",  class:"form-control" %>
+    <%= f.text_field :title , :placeholder => "Votre titre", class:"form-control" %><br>
+   <%= f.text_area :description , :placeholder => "Votre annonce", class:"form-control" %><br>
+   <%= f.number_field :price_seven_days, :placeholder => " 7jours",  class:"form-control" %><br>
+   <%= f.number_field :price_ten_days, :placeholder => " 10jours",  class:"form-control" %><br>
+   <%= f.number_field :price_fifteen_days, :placeholder => " 15jours",  class:"form-control" %><br>
+   <%= f.number_field :price_fifteenmore_days, :placeholder => " +15jours",  class:"form-control" %><br>
+   <%= f.number_field :price_twenty_days, :placeholder => " 20jours",  class:"form-control" %><br>
+   <%= f.number_field :price_month_days, :placeholder => " 1 mois",  class:"form-control" %><br>
+
    <%= f.submit :value => "Validez votre annonce",  :class => "btn btn-lg btn-primary btn-block"%>
    <% end%>
 
