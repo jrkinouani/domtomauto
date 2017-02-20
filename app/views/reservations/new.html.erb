@@ -1,0 +1,11 @@
+  <div class="container">
+    <class="col-lg-4 col-md-4">
+    <%= form_for @reservation do |f| %>
+    <%= f.hidden_field :car_id, :value => @car.id  %>
+      <%= f.date_field :at_start , :class  => "form-control" %>
+      <%= f.date_field :at_end , :class  => "form-control" %>
+      <%= f.submit :value => "Validez votre annonce",  :class => "btn btn-lg btn-primary btn-block"%>
+    <% end%>
+
+    </div>
+</div>

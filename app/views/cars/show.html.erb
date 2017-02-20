@@ -10,6 +10,9 @@
 </div>
 
 <div id="links">
+  <div class="text-center">
+          <%= link_to "Reservez", new_reservation_path(car_id: @car.id) ,class: "btn btn-lg btn-primary margin-top-s" %>
+          </div>
     <%= link_to "Retour", root_path, :class => "btn btn-primary" %>
     <%= link_to "Editez", edit_car_path, :class => "btn btn-primary" %>
     <%= link_to "Delete", car_path(@car), method: :delete, data: { confirm: "are you sure ? "}, :class => "btn btn-primary"%>

@@ -2,6 +2,9 @@ class ChargesController < ApplicationController
   def new
   end
 
+def index
+
+end
   def create
     # Amount in cents
     @amount = 500
@@ -15,7 +18,7 @@ class ChargesController < ApplicationController
       :customer    => customer.id,
       :amount      => @amount,
       :description => 'Rails Stripe customer',
-      :currency    => 'usd'
+      :currency    => 'eur'
     )
 
   rescue Stripe::CardError => e
