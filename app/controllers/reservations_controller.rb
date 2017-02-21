@@ -24,9 +24,16 @@ end
     if (@nb_days > 10) && (@nb_days <= 15)
       @reservation.pay = @car.price_fifteen_days * @nb_days
     end
+    if (@nb_days > 15) && (@nb_days <= 20)
+      @reservation.pay = @car.price_fifteenmore_days * @nb_days
+    end
+
+    if (@nb_days > 20) && (@nb_days <= 30)
+      @reservation.pay = @car.price_twenty_days * @nb_days
+    end
 
     if @reservation.save
-       redirect_to charges_path
+       redirect_to new_charge_path
     end
   end
 

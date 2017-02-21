@@ -1,9 +1,9 @@
 class ChargesController < ApplicationController
   def new
+    @reservations = Reservation.all
   end
 
 def index
-  @reservations = Reservation.all
 end
   def create
     # Amount in cents
