@@ -3,7 +3,7 @@ class ChargesController < ApplicationController
   end
 
 def index
-
+  @reservations = Reservation.all
 end
   def create
     # Amount in cents

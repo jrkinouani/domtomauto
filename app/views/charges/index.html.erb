@@ -1,1 +1,3 @@
-<%= @reservation.pay %>
+<% @reservations.each do |reservation| %>
+  <%= reservation.pay %></br>
+<% end %>
