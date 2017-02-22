@@ -32,6 +32,10 @@ end
       @reservation.pay = @car.price_twenty_days * @nb_days
     end
 
+    if @nb_days > 30
+      @reservation.pay = @car.price_month_days * @nb_days
+    end
+
     if @reservation.save
        redirect_to new_charge_path
     end
